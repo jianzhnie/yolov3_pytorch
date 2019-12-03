@@ -1,4 +1,5 @@
-# PyTorch-YOLOv3
+# yolov3_pytorch
+
 A minimal PyTorch implementation of YOLOv3, with support for training, inference and evaluation.
 
 ## Installation
@@ -10,11 +11,7 @@ A minimal PyTorch implementation of YOLOv3, with support for training, inference
 ##### Download pretrained weights
     $ cd weights/
     $ bash download_weights.sh
-
-##### Download COCO
-    $ cd data/
-    $ bash get_coco_dataset.sh
-    
+  
 ## Test
 Evaluates the model on COCO test.
 
@@ -39,10 +36,10 @@ Uses pretrained weights to make predictions on images. Below table displays the 
 
     $ python3 detect.py --image_folder data/samples/
 
-<p align="center"><img src="assets/giraffe.png" width="480"\></p>
-<p align="center"><img src="assets/dog.png" width="480"\></p>
-<p align="center"><img src="assets/traffic.png" width="480"\></p>
-<p align="center"><img src="assets/messi.png" width="480"\></p>
+<p align="center"><img src="data/assets/giraffe.png" width="480"\></p>
+<p align="center"><img src="data/assets/dog.png" width="480"\></p>
+<p align="center"><img src="data/assets/traffic.png" width="480"\></p>
+<p align="center"><img src="data/assets/messi.png" width="480"\></p>
 
 ## Train
 ```
